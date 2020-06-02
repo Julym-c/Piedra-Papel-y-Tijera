@@ -1,43 +1,72 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-body{
-background-color: #fff3cd ;  
+body {
+    width: 100%;
+    height: 100%;
+    background: #80bdab;
+    background: -moz-linear-gradient(top, #80bdab 0%, #bbf1c8 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #80bdab), color-stop(100%, #bbf1c8));
+    background: -webkit-linear-gradient(top, #80bdab 0%, #bbf1c8 100%);
+    background: -o-linear-gradient(top, #80bdab 0%, #bbf1c8 100%);
+    background: -ms-linear-gradient(top, #80bdab 0%, #bbf1c8 100%);
+    background: linear-gradient(to bottom, #80bdab 0%, #bbf1c8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80bdab', endColorstr='#bbf1c8', GradientType=0 );
 }
 
 #contenedor {
     width: 100%;
     height: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    display: block;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
 }
+
+.contenido {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
 
 #cabecera {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
-    #cabecera h1{
-        font-size: 40px;
-        color: #888888;
-        margin-bottom: 5px;
-    }
 
-    #cabecera h2{
-        font-size: 20px;
-        color: #584153;
-    }
+#cabecera h1 {
+    font-size: 40px;
+    color: #342b38 ;
+    margin-bottom: 5px;
+}
+
+#cabecera h2 {
+    font-size: 18px;
+    color: #ff9595;
+}
 
 .tamano {
-    display: inline-block;
-    width: 20%;
+    width: 300px;
+    height: 150px;
     margin: 10px;
-    margin-top: 40px;
-    border: 5px #584153;
-    padding: 10px;
-    outline: #584153;
+    margin-top: 20px;
+    border-radius: 25px 25px 25px 25px;
+    -moz-border-radius: 25px 25px 25px 25px;
+    -webkit-border-radius: 25px 25px 25px 25px;
+    border: 6px solid #ff9595;
+    background-color: #342b38;
+}
+
+.imagen {
+    width: 60%;
+    height: 60%;
+    display: ;
+    align-items: center;
+    filter: hsl(0,100%,79.2%);
 }
 
 
@@ -45,8 +74,8 @@ background-color: #fff3cd ;
   clear: both;
 }
 
-nav{
-    display: block;
-    align-content: center;
-    float: left;
+nav {
+    display: flex;
+    justify-content: center;
+
 }
