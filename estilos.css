@@ -1,7 +1,8 @@
 :root {
     --pink: #ff9595;
     --background: #eeeded;
-    --black: #342b38; 
+    --black: #495464; 
+    --grey: #bbbfca ;
     }
 
 * {
@@ -86,7 +87,7 @@ main {
     background-color: white;
     box-shadow: 10px 10px 20px -16px rgba(52,43,56,0.42);
     border-radius: 10px;
-    color: var(--black);
+    color: var(--grey);
     display: flex;
     font-size: 2rem;
     font-weight: 500;
@@ -95,6 +96,11 @@ main {
     max-width: 450px;
     margin: 10px; 
     min-width: 250px;
+    }
+
+.cards__all:hover {
+    color: white;
+    background-color: var(--black);
     }
 
 .cards__icon {
@@ -111,10 +117,22 @@ main {
     background-image: url('./items/stone.svg');
     }
 
+.cards__icon--stone:hover {
+    background-image: url('./items/stone-hover.svg');
+    }
+
 .cards__icon--paper {
     background-image: url('./items/paper.svg');
     }
 
+.cards__icon--paper:hover {
+    background-image: url('./items/paper-hover.svg');
+    }
+
 .cards__icon--scissors {
     background-image: url('./items/scissors.svg');
+    }
+
+.cards__icon--scissors:hover {
+    background-image: url('./items/scissors-hover.svg');
     }
