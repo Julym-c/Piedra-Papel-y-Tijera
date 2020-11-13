@@ -1,59 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <Link rel=StyleSheet HREF="estilos.css" TYPE="text/css" MEDIA=screen>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <Link rel=StyleSheet href="estilos.css" type="text/css" media=screen>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Piedra - Papel ó Tijera</title>
 </head>
+
 <body>
-    <div id="contenedor">
-        <div id="cabecera">
-            <h1>Jugamos :)</h1>
-            <h2>Piedra, Papel ó Tijera</h2>
-        </div>
-    </div>
-  
-    <div class="contenido">
-        <div id="Piedra" class="tamano">
-            <img src="Stone.svg" class="imagen">
-        </div>
-        
-        <div id="Papel" class="tamano">
-            <img src="communications.svg" class="imagen">
-        </div>
-
-        <div id="Tijera" class="tamano">
-            <img src="Scissors.svg" class="imagen">
-        </div>
-
-    </div>
-
-
-    <div class="contenido">  
-        <div id="Piedra" class="tamano">
-            <img src="Stone.svg" class="imagen">
-        </div>
+    <div class="container__test">
+        <!--Texto principal-->
+        <section class="test__text">
+            <h1>Escoje entre 
+                <br>
+                <b>piedra, papel ó tijera.</b>
+            </h1>
+            <h4>
+                ¡ Juega contra la pc y mira quien gana !
+            </h4>
+        </section>
+       
+        <!--Tarjetas de selección-->
+        <main>
+            <a href="#" class="cards__all">
+                <span class="cards__icon cards__icon--stone"></span>
+                Piedra
+            </a>
             
-        <div id="Papel" class="tamano">
-            <img src="communications.svg" class="imagen">
-        </div>
-    
-        <div id="Tijera" class="tamano">
-            <img src="Scissors.svg" class="imagen">
-        </div>
-    
+            <a href="#" class="cards__all">
+                <span class="cards__icon cards__icon--paper"></span>
+                Papel
+            </a>
+
+            <a href="#" class="cards__all">
+                <span class="cards__icon cards__icon--scissors"></span>
+                Tijera
+            </a>
+            
+            
+        </main>
+        <button class= "button" type="button" onclick="jugar()"">Intentar de nuevo</button>
+        </section>
+        <script src="juego.js"> </script>
     </div>
-      
-    <div id="Footer">
-    </div>
-
-    <nav>
-        <button type="button" onclick="jugar()"">Juguemos ;) </button>
-    </nav>
-
-    <script src="juego.js"> </script>
-
 </body>
 </html>
