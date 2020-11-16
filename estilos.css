@@ -57,6 +57,102 @@ h4 {
     font-weight: normal;
     }
 
+/*cards*/
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    }
+
+/*prueba de checkbox*/
+.cards__container {
+    align-items: center;
+    background-color: white;
+    box-shadow: 10px 10px 20px -16px rgba(52,43,56,0.42);
+    border-radius: 10px;
+    color: var(--grey);
+    display: flex;
+    font-size: 2rem;
+    font-weight: 500;
+    height: 80px;
+    justify-content: center;
+    max-width: 450px;
+    margin: 10px; 
+    min-width: 250px;
+    }
+
+.cards__container:hover {
+    border: 3px solid var(--pink);
+    background-color: var(--black);
+    color: white;
+    }
+
+/*checkbox*/
+/* Centra el input personalizado con el texto */
+.cards__checkbox {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+    }
+
+/*Texto*/
+.cards__checkbox--text {
+    margin-bottom: 10px;
+    }
+
+/* Modificador para dar la imagen de checkbox */
+.cards__checkbox--show-stone {
+    background-image: url('./items/stone.svg');
+    }
+
+/* Oculta input original */
+.cards__checkbox > .cards__checkbox--input {
+    display: none;
+    }
+
+/* Radio personalizado usando <span> */
+.cards__checkbox > .cards__checkbox--show {
+    background-size: cover;
+    height: 50px;
+    margin-right: 1.2rem;
+    margin-bottom: 10px;
+    width: 50px;
+    }
+
+/* Cambia el checkbox personalizado cuando es pulsado */
+.cards__checkbox > .cards__checkbox--input:checked + .cards__checkbox--show-stone {
+    background-image: url('./items/stone-hover.svg');
+    }
+    
+/*Cambiar el background de papel*/
+.cards__checkbox--show-paper {
+background-image: url('./items/paper.svg');
+}
+
+.cards__checkbox > .cards__checkbox--input:checked + .cards__checkbox--show-paper {
+background-image: url('./items/paper-hover.svg');
+}
+
+/*Cambiar el background de tijeras*/
+.cards__checkbox--show-scissors {
+background-image: url('./items/scissors.svg');
+}
+
+.cards__checkbox > .cards__checkbox--input:checked + .cards__checkbox--show-scissors {
+background-image: url('./items/scissors-hover.svg');
+}
+
+/*fin checkbox*/
+.prueba__background {
+    color: white;
+    background-color: var(--black);
+    }
+
+/*boton*/
 .button{
     align-items: center;
     background-color:var(--pink);
@@ -74,65 +170,7 @@ h4 {
     max-width: 450px;
     }
 
-/*cards*/
-main {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-    }
-
-.cards__all {
-    align-items: center;
-    background-color: white;
+.button:hover {
+    border: 3px solid white;
     box-shadow: 10px 10px 20px -16px rgba(52,43,56,0.42);
-    border-radius: 10px;
-    color: var(--grey);
-    display: flex;
-    font-size: 2rem;
-    font-weight: 500;
-    height: 80px;
-    justify-content: center;
-    max-width: 450px;
-    margin: 10px; 
-    min-width: 250px;
-    }
-
-.cards__all:hover {
-    color: white;
-    background-color: var(--black);
-    }
-
-.cards__icon {
-    display: block;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-right: 30px;
-    height: 60px;
-    width: 60px;
-    }
-
-.cards__icon--stone {
-    background-image: url('./items/stone.svg');
-    }
-
-.cards__icon--stone:hover {
-    background-image: url('./items/stone-hover.svg');
-    }
-
-.cards__icon--paper {
-    background-image: url('./items/paper.svg');
-    }
-
-.cards__icon--paper:hover {
-    background-image: url('./items/paper-hover.svg');
-    }
-
-.cards__icon--scissors {
-    background-image: url('./items/scissors.svg');
-    }
-
-.cards__icon--scissors:hover {
-    background-image: url('./items/scissors-hover.svg');
     }

@@ -23,26 +23,42 @@
         </section>
         <!--Tarjetas de selección-->
         <main>
-            <a href="#" class="cards__all">
-                <span class="cards__icon cards__icon--stone"></span>
-                Piedra
-            </a>
-            
-            <a href="#" class="cards__all">
-                <span class="cards__icon cards__icon--paper"></span>
-                Papel
-            </a>
+            <div class="cards__container">
+                <label class="cards__checkbox">
+                    <!-- Input oculto -->
+                    <input class="cards__checkbox--input" type="checkbox">
+                    <!-- Imagen en sustitucion -->
+                    <span class="cards__checkbox--show cards__checkbox--show-stone"></span>
+                    <!--texto-->
+                    <span class="cards__checkbox--text">Piedra</span>
+                </label>
+            </div>
 
-            <a href="#" class="cards__all">
-                <span class="cards__icon cards__icon--scissors"></span>
-                Tijera
-            </a>
-            
-            
+            <div class="cards__container">
+                <label class="cards__checkbox">
+                    <!-- Input oculto -->
+                    <input class="cards__checkbox--input" type="checkbox">
+                    <!-- Imagen en sustitucion -->
+                    <span class="cards__checkbox--show cards__checkbox--show-paper"></span>
+                    <!--texto-->
+                    <span class="cards__checkbox--text">Papel</span>
+                </label>
+            </div>
+
+            <div class="cards__container">
+                <label class="cards__checkbox">
+                    <!-- Input oculto -->
+                    <input class="cards__checkbox--input" type="checkbox">
+                    <!-- Imagen en sustitucion -->
+                    <span class="cards__checkbox--show cards__checkbox--show-scissors"></span>
+                    <!--texto-->
+                    <span class="cards__checkbox--text">Tijera</span>
+                </label>
+            </div>
         </main>
         <button class= "button" type="button" onclick="jugar()"">Intentar de nuevo</button>
         </section>
-        <script src="juego.js"> </script>
+        <script src="juego.js"/> 
     </div>
 </body>
 </html>
